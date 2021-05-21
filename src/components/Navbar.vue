@@ -7,7 +7,7 @@
         <div v-if="user">
           <router-link :to="{ name: 'CreatePlaylist' }">新增評量表</router-link>
           <router-link :to="{ name: 'UserPlaylists' }">個人清單</router-link>
-          <span>登入者：{{ user.displayName }}</span>
+          <span>目前登入者：{{ user.displayName }}</span>
           <button @click="handleClick">登出</button>
         </div>
         <div v-else>
